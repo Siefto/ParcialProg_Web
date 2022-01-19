@@ -1,0 +1,13 @@
+.form{
+    width: 400px;
+    height: auto;
+    background-color:rgb(235, 79, 79);
+}
+.body{
+    background-color: rgb(154, 226, 226);
+}
+#container{
+    
+    width:400px;
+    margin: 0 auto;
+}
