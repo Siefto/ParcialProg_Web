@@ -30,6 +30,7 @@
         </style>
      
      <script type="text/javascript" src="index.js"></script>
+     <script type="text/javascript" src="script.js"></script>
 
    </head>
 
@@ -80,34 +81,34 @@
 
                 
                 
-              <!--gustos-->
-              <div class="row">
-                <div class="input-field col s12">
-                    <input id="gustos" type="text" class="validate">
-                    <!--<label for="gustos"><button class="btn waves-effect waves-light" type="submit" name="action">Gustos</label>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">info</i>
+                    <input id="gustos" name="gustos" type="text" class="validate">
+                    <label for="gustos">Gustos</label>
+                  </div>
+                        
+                  <button class="btn waves-effect waves-light" type="Button" onclick="getInfo()" name="action">Submit
+                    <i class="material-icons right">send</i>
+                  </button>
+
+                
+
+                <div class="centeredTable">
+                  <table class="centered">
+                    <tr>
+                      <td>Gusto</td>
+                      <td>%</td>
+                      <td>EDIT</td>
+                    </tr>
+                  </table>
+                  <table id="myTable" class="centered">
+                  </table>
                 </div>
-
-                < Tabla de gustos-->
-                
-                
-
-                <p>Click the button to add a new row at the first position of the table and then add cells and content.</p>
-                <button type="button" onclick="myFunction()">Try it</button>
-                <table id="myTable">
-                  <tr>
-                    <td>Row1 cell1</td>
-                    <td>Row1 cell2</td>
-                  </tr>
-                  <tr>
-                    <td>Row2 cell1</td>
-                    <td>Row2 cell2</td>
-                  </tr>
-                  <tr>
-                    <td>Row3 cell1</td>
-                    <td>Row3 cell2</td>
-                  </tr>
-                </table>
                 <br>
+                
+                
+
  
           </div>
 
@@ -120,17 +121,6 @@
     <button type="button" href="resultado.html" onclick="Guardar_contenido()">Aceptar</button>
 
     
-
-    <script>
-      function myFunction() {
-        var table = document.getElementById("myTable");
-        var row = table.insertRow(0);
-        var cell1 = row.insertCell(0);
-        var cell2 = row.insertCell(1);
-        cell1.innerHTML = "NEW CELL1";
-        cell2.innerHTML = "NEW CELL2";
-      }
-      </script>
     
 </body>
 </html>
