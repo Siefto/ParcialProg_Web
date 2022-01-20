@@ -28,6 +28,8 @@
         p {text-align: center;}
         div {text-align: center;}
         </style>
+     
+     <script type="text/javascript" src="index.js"></script>
 
    </head>
 
@@ -50,27 +52,34 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="material-icons prefix">account_circle</i>
-                    <input id="nombre" type="text" class="validate">
+                    <input id="nombre" name="nombre"type="text" class="validate">
+                    
                     <label for="nombre">Nombre Completo</label>
+                  </span>
                 </div>
               
               <!--email-->
               <div class="row">
                 <div class="input-field col s12">
                     <i class="material-icons prefix">email</i>
-                    <input id="email" type="text" class="validate">
+                    <input id="email" name= "email" type="text" class="validate">
+                   
                     <label for="email">Email</label>
+                    </span>
                 </div>
               
                 <!--telefono-->
               <div class="row">
                 <div class="input-field col s12">
                     <i class="material-icons prefix">local_phone</i>
-                    <input id="telefono" type="text" class="validate">
+                    <input id="telefono" name="telefono" type="text" class="validate">
+                    
                     <label for="telefono">Teléfono</label>
+                    </span>
                 </div>
 
-              
+                
+                
               <!--gustos-->
               <div class="row">
                 <div class="input-field col s12">
@@ -83,7 +92,7 @@
                 
 
                 <p>Click the button to add a new row at the first position of the table and then add cells and content.</p>
-
+                <button type="button" onclick="myFunction()">Try it</button>
                 <table id="myTable">
                   <tr>
                     <td>Row1 cell1</td>
@@ -99,18 +108,18 @@
                   </tr>
                 </table>
                 <br>
-                
-                <button type="button" onclick="myFunction()">Try it</button>
-
-   
-
-      
+ 
           </div>
 
-        
-
       </div>
+
+      
+
     </form>
+
+    <button type="button" href="resultado.html" onclick="Guardar_contenido()">Aceptar</button>
+
+    
 
     <script>
       function myFunction() {
