@@ -1,10 +1,16 @@
 .form{
     width: 400px;
     height: auto;
-    background-color:rgb(235, 79, 79);
+    background-color:rgb(255, 255, 255);
+    border: 1px groove;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
 }
-.body{
-    background-color: rgb(154, 226, 226);
+
+body{
+    background-color: rgb(197, 226, 226);
 }
 #container{
     

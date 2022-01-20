@@ -38,7 +38,7 @@
     
       <div class="container" id="container">
         <!-- Page Content goes here -->
-        <h1>WebDeveloper</h1>
+        <h1><bold>Web</bold>Developer</h1>
 
      <form class="form" name="form" method="post">
         <h5>Formulario de afiliación</h5>
@@ -80,23 +80,48 @@
 
                 < Tabla de gustos-->
                 
+                
 
-              
+                <p>Click the button to add a new row at the first position of the table and then add cells and content.</p>
 
+                <table id="myTable">
+                  <tr>
+                    <td>Row1 cell1</td>
+                    <td>Row1 cell2</td>
+                  </tr>
+                  <tr>
+                    <td>Row2 cell1</td>
+                    <td>Row2 cell2</td>
+                  </tr>
+                  <tr>
+                    <td>Row3 cell1</td>
+                    <td>Row3 cell2</td>
+                  </tr>
+                </table>
+                <br>
+                
+                <button type="button" onclick="myFunction()">Try it</button>
 
+   
 
-
-
-            
-              
-
-        
+      
           </div>
 
         
 
       </div>
     </form>
+
+    <script>
+      function myFunction() {
+        var table = document.getElementById("myTable");
+        var row = table.insertRow(0);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        cell1.innerHTML = "NEW CELL1";
+        cell2.innerHTML = "NEW CELL2";
+      }
+      </script>
     
 </body>
 </html>
